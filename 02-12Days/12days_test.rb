@@ -119,30 +119,34 @@ class Xmas
 
     case verse_input
     when 0
-      "On the first day of Christmas my true love gave to me\n#{self.gifts(0).first}"
+      day_word = "first"
     when 1
-      "On the second day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "second"
     when 2
-      "On the third day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "third"
     when 3
-      "On the fourth day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "fourth"
     when 4
-      "On the fifth day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "fifth"
     when 5
-      "On the sixth day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "sixth"
     when 6
-      "On the seventh day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "seventh"
     when 7
-      "On the eighth day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "eighth"
     when 8
-      "On the ninth day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "ninth"
     when 9
-      "On the tenth day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "tenth"
     when 10
-      "On the eleventh day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "eleventh"
     when 11
-      "On the twelfth day of Christmas my true love gave to me#{lines_to_sing}"
+      day_word = "twelfth"
     end
+
+
+    "On the #{day_word} day of Christmas my true love gave to me#{lines_to_sing}"
+
   end
 
   def self.sing
