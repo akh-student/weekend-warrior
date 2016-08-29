@@ -113,39 +113,14 @@ class Xmas
 
   def self.verse(verse_input)
     lines_to_sing = ""
+    
     self.gifts(verse_input).each do |line|
       lines_to_sing += "\n#{line}"
     end
 
-    case verse_input
-    when 0
-      day_word = "first"
-    when 1
-      day_word = "second"
-    when 2
-      day_word = "third"
-    when 3
-      day_word = "fourth"
-    when 4
-      day_word = "fifth"
-    when 5
-      day_word = "sixth"
-    when 6
-      day_word = "seventh"
-    when 7
-      day_word = "eighth"
-    when 8
-      day_word = "ninth"
-    when 9
-      day_word = "tenth"
-    when 10
-      day_word = "eleventh"
-    when 11
-      day_word = "twelfth"
-    end
+    day_word_array = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"]
 
-
-    "On the #{day_word} day of Christmas my true love gave to me#{lines_to_sing}"
+    "On the #{day_word_array[verse_input]} day of Christmas my true love gave to me#{lines_to_sing}"
 
   end
 
@@ -162,3 +137,5 @@ class Xmas
   end
 
 end
+
+# puts Xmas.sing
